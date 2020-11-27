@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AeroportoWPF", "AeroportoWPF\AeroportoWPF.csproj", "{13B9D41C-0FBC-44D6-BEEB-C79E8D3C63D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13B9D41C-0FBC-44D6-BEEB-C79E8D3C63D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13B9D41C-0FBC-44D6-BEEB-C79E8D3C63D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13B9D41C-0FBC-44D6-BEEB-C79E8D3C63D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13B9D41C-0FBC-44D6-BEEB-C79E8D3C63D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF5955F7-7619-4ED3-89F8-A11951DBAA89}
+	EndGlobalSection
+EndGlobal

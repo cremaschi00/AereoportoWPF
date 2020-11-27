@@ -5,11 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AeroportoWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="AEROPORTO" Height="450" Width="800">
     <Grid>
-        <Button Name="btnCaricamento" Content="Caricamento" HorizontalAlignment="Left" Margin="105,69,0,0" VerticalAlignment="Top" Width="75" Click="btnCaricamento_Click"/>
-        <Button Name="btnStatistiche" Content="Statistiche" HorizontalAlignment="Left" Margin="105,140,0,0" VerticalAlignment="Top" Width="75" Click="btnStatistiche_Click"/>
-        <Button Name="btnVisualizza" Content="VIsualizza" HorizontalAlignment="Left" Margin="380,74,0,0" VerticalAlignment="Top" Width="75" Click="btnVisualizza_Click"/>
+        <Button Name="btnCaricamento" Content="Caricamento" HorizontalAlignment="Left" Margin="434,310,0,0" VerticalAlignment="Top" Width="75" Click="btnCaricamento_Click"/>
+        <Button Name="btnStatistiche" Content="Statistiche" HorizontalAlignment="Left" Margin="434,381,0,0" VerticalAlignment="Top" Width="75" Click="btnStatistiche_Click"/>
+        <Button Name="btnVisualizza" Content="VIsualizza" HorizontalAlignment="Left" Margin="709,315,0,0" VerticalAlignment="Top" Width="75" Click="btnVisualizza_Click"/>
+        <Image HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="233" Source="images.jpg"/>
+        <StackPanel HorizontalAlignment="Left" Height="171" Margin="233,0,-0.4,0" VerticalAlignment="Top" Width="561">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFF90000" Offset="1"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+        </StackPanel>
+        <Label Content="AEROPORTO ROSSO" HorizontalAlignment="Left" Margin="411,86,0,0" VerticalAlignment="Top" Width="356" FontSize="36" FontStyle="Italic" FontWeight="Bold"/>
+        <StackPanel HorizontalAlignment="Left" Height="182" Margin="161,157,0,0" VerticalAlignment="Top" Width="100"/>
+        <StackPanel HorizontalAlignment="Left" Height="86" Margin="0,157,-0.4,0" VerticalAlignment="Top" Width="794"/>
 
 
     </Grid>

@@ -17,7 +17,7 @@
         <Label x:Name="lblMarconi" Content="-->" HorizontalAlignment="Left" Margin="10,366,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblPilotaBordo" Content="-->" HorizontalAlignment="Left" Margin="10,428,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblMaxIncasso" Content="-->" HorizontalAlignment="Left" Margin="10,490,0,0" VerticalAlignment="Top"/>
-        <ListView HorizontalAlignment="Left" Height="397" Margin="606,176,0,0" VerticalAlignment="Top" Width="394">
+        <ListView HorizontalAlignment="Left" Height="397" Margin="606,176,0,0" VerticalAlignment="Top" Width="394" SelectionChanged="ListView_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>

@@ -201,5 +201,10 @@ namespace AeroportoWPF
                 lstBiglietti.Items.Add(lvi);
             }*/
         }
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

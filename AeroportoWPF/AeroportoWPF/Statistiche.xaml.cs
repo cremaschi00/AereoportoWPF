@@ -135,7 +135,7 @@ namespace AeroportoWPF
                     MarconiCount++;
                 }
             }
-           lblMarconi.Content += MarconiCount.ToString();
+            lblMarconi.Content += MarconiCount.ToString();
 
             // Voli con pilota a bordo
             int VoliConPilota = 0;
@@ -147,7 +147,7 @@ namespace AeroportoWPF
                     VoliConPilota++;
                 }
             }
-           lblPilotaBordo.Content +=  VoliConPilota.ToString();
+            lblPilotaBordo.Content += VoliConPilota.ToString();
 
             // Volo/i con maggiore incasso
             // Dichiaro e inizializzo l'HashTable
@@ -188,23 +188,20 @@ namespace AeroportoWPF
 
 
 
-/*
+            /*
 
-            foreach (Biglietto item in MieiBiglietti)
-            {
-                ListViewItem lvi = new ListViewItem(item.PersonaBiglietto.Nome);
-                lvi.SubItems.Add(item.PersonaBiglietto.Cognome);
-                lvi.SubItems.Add(item.VoloBiglietto.Codice);
-                lvi.SubItems.Add(item.Codice);
-                lvi.SubItems.Add(item.VoloBiglietto.AereoportoVolo.Nome);
-                lvi.SubItems.Add(item.VoloBiglietto.AereoVolo.Marca);
-                lstBiglietti.Items.Add(lvi);
-            }*/
+                        foreach (Biglietto item in MieiBiglietti)
+                        {
+                            ListViewItem lvi = new ListViewItem(item.PersonaBiglietto.Nome);
+                            lvi.SubItems.Add(item.PersonaBiglietto.Cognome);
+                            lvi.SubItems.Add(item.VoloBiglietto.Codice);
+                            lvi.SubItems.Add(item.Codice);
+                            lvi.SubItems.Add(item.VoloBiglietto.AereoportoVolo.Nome);
+                            lvi.SubItems.Add(item.VoloBiglietto.AereoVolo.Marca);
+                            lstBiglietti.Items.Add(lvi);
+                        }*/
         }
 
-        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
+    
     }
 }

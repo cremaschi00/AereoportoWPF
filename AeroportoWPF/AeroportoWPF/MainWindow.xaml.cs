@@ -164,5 +164,6 @@ namespace AeroportoWPF
             Statistiche myStatistiche = new Statistiche(ListaAerei, ListaPersone, ListaAereoporti, ListaVoli, ListaBiglietti);
             myStatistiche.Show();
         }
+
     }
 }

@@ -107,6 +107,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="aeroporto-d-avvicinamento-degli-aerei-al-tramonto-33447877.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="sunset-sky-from-airplane-window-height-35-000-feet_25169-113.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

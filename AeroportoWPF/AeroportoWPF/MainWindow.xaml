@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button Name="btnCaricamento" Content="Caricamento" HorizontalAlignment="Left" Margin="105,69,0,0" VerticalAlignment="Top" Width="75" Click="btnCaricamento_Click"/>
+        <Button Name="btnStatistiche" Content="Statistiche" HorizontalAlignment="Left" Margin="105,140,0,0" VerticalAlignment="Top" Width="75" Click="btnStatistiche_Click"/>
+        <Button Name="btnVisualizza" Content="VIsualizza" HorizontalAlignment="Left" Margin="380,74,0,0" VerticalAlignment="Top" Width="75" Click="btnVisualizza_Click"/>
+
+
     </Grid>
 </Window>

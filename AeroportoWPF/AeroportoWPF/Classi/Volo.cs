@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aeroporto.Classi
 {
-    class Volo
+    public class Volo
     {
         public DateTime DataOraPartenza { get; set; }
         public DateTime DataOraArrivo { get; set; }

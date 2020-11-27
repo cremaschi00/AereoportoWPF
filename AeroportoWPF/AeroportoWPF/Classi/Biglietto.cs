@@ -7,7 +7,7 @@ using static Aeroporto.Classi.Enumerazioni;
 
 namespace Aeroporto.Classi
 {
-    class Biglietto
+    public class Biglietto
     {
         public string Codice { get; set; }
         public Volo VoloBiglietto { get; set; }

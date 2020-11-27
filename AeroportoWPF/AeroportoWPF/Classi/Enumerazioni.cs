@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aeroporto.Classi
 {
-    class Enumerazioni
+    public class Enumerazioni
     {
         public enum TipoDocumento
         {

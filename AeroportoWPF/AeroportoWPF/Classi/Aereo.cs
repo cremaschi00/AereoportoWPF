@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aeroporto.Classi
 {
-    class Aereo
+    public class Aereo
     {
         public string Marca { get; set; }
         public string Modello { get; set; }

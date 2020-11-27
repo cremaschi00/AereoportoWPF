@@ -63,6 +63,12 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Classi\Aereo.cs" />
+    <Compile Include="Classi\Aereoporto.cs" />
+    <Compile Include="Classi\Biglietto.cs" />
+    <Compile Include="Classi\Enumerazioni.cs" />
+    <Compile Include="Classi\Persona.cs" />
+    <Compile Include="Classi\Volo.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -94,5 +100,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,7 +16,25 @@ using Aeroporto.Classi;
 
 namespace AeroportoWPF
 {
+    class appoggio
+    {
+        public string Nome { get; set; }
+        public string Cognome { get; set; }
+        public string Codvolo { get; set; }
+        public string Codbig { get; set; }
+        public string Dest { get; set; }
+        public string Marca { get; set; }
 
+        public appoggio(string nome, string cognome, string codvolo, string codbig, string dest, string marca)
+        {
+            Nome = nome;
+            Cognome = cognome;
+            Codvolo = codvolo;
+            Codbig = codbig;
+            Dest = dest;
+            Marca = marca;
+        }
+    }
     /// <summary>
     /// Logica di interazione per Statistiche.xaml
     /// </summary>
@@ -183,6 +201,15 @@ namespace AeroportoWPF
                 {
                     lblMaxIncasso.Content = lblMaxIncasso.Content + " " + item.Key;
                 }
+            } 
+
+            
+            foreach(Biglietto ogg in MieiBiglietti)
+            {
+                appoggio myapp = new appoggio(ogg.PersonaBiglietto.Nome, ogg.PersonaBiglietto.Cognome, ogg.VoloBiglietto.Codice, ogg.Codice, ogg.VoloBiglietto.AereoportoVolo.Nome, ogg.VoloBiglietto.AereoVolo.Marca);
+                lvDati.Items.Add(myapp); ;
+
+                
             }
 
 

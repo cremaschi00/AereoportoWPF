@@ -46,14 +46,12 @@
         <ListView Margin="11,176,-0.2,0.4" Name="lvDati" Grid.Column="1" Grid.ColumnSpan="3">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Codice" Width="83" DisplayMemberBinding="{Binding Codice}" />
-                    <GridViewColumn Header="Volo" Width="83" DisplayMemberBinding="{Binding Volo}" />
-                    <GridViewColumn Header="Persona" Width="83" DisplayMemberBinding="{Binding Mail}" />
-                    <GridViewColumn Header="Ruolo" Width="90" DisplayMemberBinding="{Binding Name}" />
-                    <GridViewColumn Header="Prezzo" Width="83" DisplayMemberBinding="{Binding Age}" />
-                    <GridViewColumn Header="Elettronico" Width="83" DisplayMemberBinding="{Binding Mail}" />
-                    <GridViewColumn Header="Sezione" Width="90" DisplayMemberBinding="{Binding Name}" />
-                    <GridViewColumn Header="Posto" Width="83" DisplayMemberBinding="{Binding Age}" />
+                    <GridViewColumn Header="Nome" Width="111" DisplayMemberBinding="{Binding Nome}" />
+                    <GridViewColumn Header="Cognome" Width="111" DisplayMemberBinding="{Binding Cognome}" />
+                    <GridViewColumn Header="Codice Volo" Width="111" DisplayMemberBinding="{Binding Codvolo}" />
+                    <GridViewColumn Header="Codice Biglietto" Width="111" DisplayMemberBinding="{Binding Codbig}" />
+                    <GridViewColumn Header="Aeroporto arrivo" Width="111" DisplayMemberBinding="{Binding Dest}" />
+                    <GridViewColumn Header="Marca Aereo" Width="111" DisplayMemberBinding="{Binding Marca}" />
                 </GridView>
             </ListView.View>
         </ListView>

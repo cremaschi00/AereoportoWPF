@@ -57,20 +57,20 @@ namespace AeroportoWPF
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
+            
             // Aereo/i con il maggior numero di voli
 
-            // Nella lista MieiVoli ho Voli e Aerei, tutto ciò che mi serve
-            // Mi creo una struttura in grado di ospitare gli aerei e i voli da loro eseguiti
-            // Inizialmente pongo = 0 il numero dei voli eseguiti per ogni aereo poi man mano che 
-            // all'interno della lista MIeiVoli troverò un volo eseguito da un aereo andrò ad
-            // incrementare di una unità il numero dei voli di quell'aereo.
-            // Uso una HashTable: la chiave è il codice Aereo (non potrà essere duplicato),
-            // il valore è il NumeroVoli
+        // Nella lista MieiVoli ho Voli e Aerei, tutto ciò che mi serve
+        // Mi creo una struttura in grado di ospitare gli aerei e i voli da loro eseguiti
+        // Inizialmente pongo = 0 il numero dei voli eseguiti per ogni aereo poi man mano che 
+        // all'interno della lista MIeiVoli troverò un volo eseguito da un aereo andrò ad
+        // incrementare di una unità il numero dei voli di quell'aereo.
+        // Uso una HashTable: la chiave è il codice Aereo (non potrà essere duplicato),
+        // il valore è il NumeroVoli
 
 
-            // Dichiaro e inizializzo l'HashTable
-            Hashtable ht1 = new Hashtable();
+        // Dichiaro e inizializzo l'HashTable
+        Hashtable ht1 = new Hashtable();
             // Metto a 0 tutti i valori
             foreach (Aereo item in MieiAerei)
             {

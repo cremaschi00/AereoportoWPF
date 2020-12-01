@@ -28,6 +28,7 @@ namespace AeroportoWPF
         List<Volo> ListaVoli;
         List<Biglietto> ListaBiglietti;
         private bool caricamento = false;
+        
         public MainWindow()
         {
             ListaAerei = new List<Aereo>();
@@ -38,8 +39,14 @@ namespace AeroportoWPF
             InitializeComponent();
         }
 
-        private void btnCaricamento_Click(object sender, RoutedEventArgs e)
+        private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            btnStatistiche.Visibility = Visibility.Hidden;
+            btnVisualizza.Visibility = Visibility.Hidden;
+        }
+            private void btnCaricamento_Click(object sender, RoutedEventArgs e)
+            {
+
             Aereo AE1, AE2, AE3, AE4, AE5;
             AE1 = new Aereo("BOEING", "747", 400, 300, 6, "Motore", true, 900, 1000, "ALITALIA", "BO1ALI");
             AE2 = new Aereo("AIRBUS", "A320", 350, 350, 6, "Motore", true, 1000, 1100, "LUFTHANSA", "AI20LU");
@@ -150,8 +157,11 @@ namespace AeroportoWPF
             caricamento = true;
             MessageBox.Show("Caricamento concluso con successo", "Caricamento dati");
             btnCaricamento.IsEnabled = false;
+            btnStatistiche.Visibility = Visibility.Visible;
+            btnVisualizza.Visibility = Visibility.Visible;
+
         }
-        
+
         private void btnVisualizza_Click(object sender, RoutedEventArgs e)
         {
             foreach (Aereo item in ListaAerei)

@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AeroportoWPF"
         mc:Ignorable="d"
-        Title="AEROPORTO" Height="386.4" Width="685.6">
+        Title="AEROPORTO" Height="386.4" Width="685.894" Loaded="Window_Loaded">
     <Grid Margin="0,0,3.2,0.8">
         <Grid.Background>
             <ImageBrush ImageSource="aeroporto-d-avvicinamento-degli-aerei-al-tramonto-33447877.jpg"/>
         </Grid.Background>
-        <Button Name="btnCaricamento" Content="CARICAMENTO DATI" HorizontalAlignment="Left" Margin="35,209,0,0" VerticalAlignment="Top" Width="179" Click="btnCaricamento_Click" Height="54"/>
-        <Button Name="btnStatistiche" Content="STATISTICHE" HorizontalAlignment="Left" Margin="453,209,0,0" VerticalAlignment="Top" Width="179" Click="btnStatistiche_Click" Height="54" RenderTransformOrigin="0.402,0.526" Background="#FFDDDDDD"/>
-        <Button Name="btnVisualizza" Content="VISUALIZZA AEREI" HorizontalAlignment="Left" Margin="233,292,0,0" VerticalAlignment="Top" Width="179" Click="btnVisualizza_Click" Height="54"/>
+        <Button Name="btnCaricamento" Content="CARICAMENTO DATI" HorizontalAlignment="Left" Margin="233,268,0,0" VerticalAlignment="Top" Width="179" Click="btnCaricamento_Click" Height="54"/>
+        <Button Name="btnStatistiche" Content="STATISTICHE" HorizontalAlignment="Left" Margin="416,209,0,0" VerticalAlignment="Top" Width="179" Click="btnStatistiche_Click" Height="54" RenderTransformOrigin="0.402,0.526" Background="#FFDDDDDD"/>
+        <Button Name="btnVisualizza" Content="VISUALIZZA AEREI" HorizontalAlignment="Left" Margin="55,209,0,0" VerticalAlignment="Top" Width="178" Click="btnVisualizza_Click" Height="54" RenderTransformOrigin="0.406,-1.023"/>
         <Image HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="233" Source="images.jpg"/>
-        <StackPanel HorizontalAlignment="Left" Height="171" Margin="233,0,-0.4,0" VerticalAlignment="Top" Width="561">
+        <StackPanel HorizontalAlignment="Left" Height="171" Margin="233,0,0,0" VerticalAlignment="Top" Width="445">
             <StackPanel.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -23,7 +23,7 @@
             </StackPanel.Background>
         </StackPanel>
         <Label Content="AEROPORTO ROSSO" HorizontalAlignment="Left" Margin="313,86,0,0" VerticalAlignment="Top" Width="356" FontSize="36" FontStyle="Italic" FontWeight="Bold"/>
-        <StackPanel HorizontalAlignment="Left" Height="33" Margin="0,149,-0.4,0" VerticalAlignment="Top" Width="794">
+        <StackPanel HorizontalAlignment="Left" Height="33" Margin="0,149,0,0" VerticalAlignment="Top" Width="678">
             <StackPanel.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>

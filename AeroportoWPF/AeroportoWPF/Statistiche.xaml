@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AeroportoWPF"
         mc:Ignorable="d"
-        Title="Statistiche" Height="600" Width="1223.5" Loaded="Window_Loaded">
-    <Grid Margin="0">
+        Title="Statistiche" Height="600" Width="1225.1" Loaded="Window_Loaded">
+    <Grid Margin="0,0,2.8,0.4">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="223*"/>
             <ColumnDefinition Width="215*"/>
@@ -14,7 +14,7 @@
             <ColumnDefinition Width="53*"/>
         </Grid.ColumnDefinitions>
         <Label x:Name="lbl1" Content="Aerei con il maggior numero di voli : " Foreground="red" HorizontalAlignment="Left" Margin="10,199,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.698,-0.242" FontSize="16"/>
-        <Label x:Name="lbl2" Content="Volo con il massimo numeroi di passeggeri : " Foreground="red" HorizontalAlignment="Left" Margin="10,267,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="lbl2" Content="Volo con il massimo numero di passeggeri : " Foreground="red" HorizontalAlignment="Left" Margin="10,267,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Label x:Name="lbl3" Content="Voli arrivati al Marconi : " Foreground="red" HorizontalAlignment="Left" Margin="10,335,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.76,-1.75" FontSize="16"/>
         <Label x:Name="lbl4" Content="Voli con piloti a bordo : " Foreground="red" HorizontalAlignment="Left" Margin="10,397,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Label x:Name="lbl5" Content="Volo con maggior incasso : " Foreground="red" HorizontalAlignment="Left" Margin="10,459,0,0" VerticalAlignment="Top" FontSize="16"/>
@@ -24,16 +24,17 @@
         <Label x:Name="lblPilotaBordo" Content="-->" HorizontalAlignment="Left" Margin="10,428,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblMaxIncasso" Content="-->" HorizontalAlignment="Left" Margin="10,490,0,0" VerticalAlignment="Top"/>
         <Image HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="233" Source="images.jpg"/>
-        <StackPanel HorizontalAlignment="Left" Height="171" Margin="233,0,-0.2,0" VerticalAlignment="Top" Width="984" Grid.ColumnSpan="4">
+        <StackPanel HorizontalAlignment="Left" Height="171" Margin="233,0,-2.997,0" VerticalAlignment="Top" Width="984" Grid.ColumnSpan="4">
             <StackPanel.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
                     <GradientStop Color="#FFF90000" Offset="1"/>
                 </LinearGradientBrush>
             </StackPanel.Background>
+            <Label Content="By" Height="37"/>
         </StackPanel>
-        <Label Content="AEROPORTO ROSSO" HorizontalAlignment="Left" Margin="52.6,86,0,0" VerticalAlignment="Top" Width="356" FontSize="36" FontStyle="Italic" FontWeight="Bold" Grid.Column="1"/>
-        <StackPanel HorizontalAlignment="Left" Height="33" Margin="0,149,-0.2,0" VerticalAlignment="Top" Width="1217" Grid.ColumnSpan="4">
+        <Label Content="AEROPORTO ROSSO" HorizontalAlignment="Left" Margin="319.8,86,0,0" VerticalAlignment="Top" Width="356" FontSize="36" FontStyle="Italic" FontWeight="Bold" Grid.Column="1" Grid.ColumnSpan="3"/>
+        <StackPanel HorizontalAlignment="Left" Height="33" Margin="0,149,-2.997,0" VerticalAlignment="Top" Width="1217" Grid.ColumnSpan="4">
             <StackPanel.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -42,8 +43,12 @@
             </StackPanel.Background>
         </StackPanel>
 
-        <Grid Grid.Column="1" HorizontalAlignment="Left" Height="387" Margin="55.6,176,0,0" VerticalAlignment="Top" Width="378" Grid.ColumnSpan="2"/>
-        <ListView Margin="11,176,-0.2,0.4" Name="lvDati" Grid.Column="1" Grid.ColumnSpan="3">
+        <Grid HorizontalAlignment="Left" Margin="335,176,0,0" Width="273" Grid.ColumnSpan="2">
+            <Grid.Background>
+                <ImageBrush ImageSource="sunset-sky-from-airplane-window-height-35-000-feet_25169-113.jpg"/>
+            </Grid.Background>
+        </Grid>
+        <ListView Margin="0,176,-2.997,0" Name="lvDati" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Right" Width="609">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Nome" Width="111" DisplayMemberBinding="{Binding Nome}" />

@@ -22,13 +22,6 @@
         <Label x:Name="lblMarconi" Content="-->" HorizontalAlignment="Left" Margin="10,366,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblPilotaBordo" Content="-->" HorizontalAlignment="Left" Margin="10,428,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblMaxIncasso" Content="-->" HorizontalAlignment="Left" Margin="10,490,0,0" VerticalAlignment="Top"/>
-        <ListView HorizontalAlignment="Left" Height="397" Margin="51.3,176,-1,0" VerticalAlignment="Top" Width="394" Grid.Column="2">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn/>
-                </GridView>
-            </ListView.View>
-        </ListView>
         <Image HorizontalAlignment="Left" Height="171" VerticalAlignment="Top" Width="233" Source="images.jpg"/>
         <StackPanel HorizontalAlignment="Left" Height="171" Margin="233,0,0,0" VerticalAlignment="Top" Width="767" Grid.ColumnSpan="3">
             <StackPanel.Background>
@@ -52,6 +45,15 @@
                 <ImageBrush ImageSource="sunset-sky-from-airplane-window-height-35-000-feet_25169-113.jpg"/>
             </StackPanel.Background>
         </StackPanel>
-
+        <Grid Grid.Column="2" HorizontalAlignment="Left" Height="387" Margin="56,176,0,0" VerticalAlignment="Top" Width="378"/>
+        <ListView Margin="52,176,0,0" Name="lvUsers" Grid.Column="2">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Name" Width="120" DisplayMemberBinding="{Binding Name}" />
+                    <GridViewColumn Header="Age" Width="50" DisplayMemberBinding="{Binding Age}" />
+                    <GridViewColumn Header="Mail" Width="150" DisplayMemberBinding="{Binding Mail}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Window>

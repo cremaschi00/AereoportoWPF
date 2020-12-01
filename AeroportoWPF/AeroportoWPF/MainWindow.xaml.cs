@@ -27,6 +27,7 @@ namespace AeroportoWPF
         List<Aereoporto> ListaAereoporti;
         List<Volo> ListaVoli;
         List<Biglietto> ListaBiglietti;
+        private bool caricamento = false;
         public MainWindow()
         {
             ListaAerei = new List<Aereo>();
@@ -146,11 +147,11 @@ namespace AeroportoWPF
             ListaBiglietti.Add(B14);
             ListaBiglietti.Add(B15);
 
-
+            caricamento = true;
             MessageBox.Show("Caricamento concluso con successo", "Caricamento dati");
             btnCaricamento.IsEnabled = false;
         }
-
+        
         private void btnVisualizza_Click(object sender, RoutedEventArgs e)
         {
             foreach (Aereo item in ListaAerei)
@@ -161,8 +162,16 @@ namespace AeroportoWPF
 
         private void btnStatistiche_Click(object sender, RoutedEventArgs e)
         {
-            Statistiche myStatistiche = new Statistiche(ListaAerei, ListaPersone, ListaAereoporti, ListaVoli, ListaBiglietti);
-            myStatistiche.Show();
+            
+            if(caricamento)
+            {
+                Statistiche myStatistiche = new Statistiche(ListaAerei, ListaPersone, ListaAereoporti, ListaVoli, ListaBiglietti);
+                myStatistiche.Show();
+            }
+            else
+            {
+                MessageBox.Show("Bisogna caricare i dati");
+            }
         }
 
     }
